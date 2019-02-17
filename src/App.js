@@ -20,10 +20,16 @@ class App extends Component {
                 <div className="band">
                   <img src="https://raw.githubusercontent.com/radeth/brainattach-v2/workingBranch/src/img/opaska1.jpg" />
                 </div>
+                <div className="slideGradient">
+
+                </div>
               </div>
               <div className="slide">
                 <div className="algorithm">
                   <img src="https://raw.githubusercontent.com/radeth/brainattach-v2/workingBranch/src/img/28537020_10213994849819679_1350367635_n.jpg" />
+
+                </div>
+                <div className="slideGradient">
 
                 </div>
               </div>

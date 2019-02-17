@@ -1,10 +1,25 @@
-.slider{
-    .slide{
-        text-align: right;
-        img{
-           height: auto;
-           width: 60%;
+body {
+    background-color: aqua
+}
+
+.slider {
+    .slide {
+        position: relative;
+        img {
+            height: auto;
+            width: 60%;
+            position: relative;
+        }
+        .slideGradient {
+            position:absolute;
+            z-index:2;
+            right:0; bottom:0; left:0;
+            height: 100%;
+            background: none;
+            background:-webkit-linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 40%);
+background:-o-linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 40%);
+background:-moz-linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 40%);
+background:linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 40%);
         }
     }
-   
 }
