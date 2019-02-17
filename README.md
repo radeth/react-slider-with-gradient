@@ -1,6 +1,6 @@
 # react slider
 
-a slider training project for the brainattach site
+responsive slider with image and gradient. This is training project for the brainattach site. 
 [main project](https://github.com/radeth/brainattach-v2)
 ## Setup
 
@@ -18,14 +18,4 @@ You will also see any lint errors in the console.
 
 Builds the app for production to the `build` folder.<br>
 
-## Features
-
-To-do list:
-- image position
-- gradient
-- position on mobile
-
-## Status
-
-Project is: _in progress_
 
