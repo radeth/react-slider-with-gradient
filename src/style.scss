@@ -1,25 +1,83 @@
-body {
-    background-color: aqua
-}
-
+$colorGreen: #00a06c;
+$colorGray: #37393b;
+$fontCool: "Major Mono Display", monospace;
 .slider {
     .slide {
+        border-radius: 5px;
         position: relative;
         img {
             height: auto;
-            width: 60%;
+            width: 40%;
             position: relative;
         }
         .slideGradient {
-            position:absolute;
-            z-index:2;
-            right:0; bottom:0; left:0;
+            text-align: center;
+            position: absolute;
+            z-index: 2;
+            right: 0;
+            bottom: 0;
+            left: 0;
             height: 100%;
             background: none;
-            background:-webkit-linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 40%);
-background:-o-linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 40%);
-background:-moz-linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 40%);
-background:linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 40%);
+            background: -webkit-linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 40%);
+            background: -o-linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 40%);
+            background: -moz-linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 40%);
+            background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 40%);
+        }
+    }
+}
+.myButton {
+    min-width: 35%;
+    transition: 1s;
+    background-color: $colorGreen;
+    border-radius: 28px;
+    border: 1px solid $colorGreen;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 1.4rem;
+    padding: 0.9rem !important;
+    text-decoration: none;
+    text-shadow: 0px 2px 0px $colorGreen;
+  }
+  .myButton:hover {
+    font-weight: 900;
+    color: $colorGray;
+    box-shadow: 0 0 5px $colorGray;
+    padding: 3px 0px 3px 3px;
+    margin: 5px 1px 3px 0px;
+    border: 1px solid $colorGray;
+  }
+  .myButton:active {
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    top: 1px;
+  }
+
+@media screen and (max-width: 576px) {
+    .slider {
+        .slide {
+            border-radius: 5px;
+            position: relative;
+            height: 100vh;
+            img {
+                width: 100%;
+                position: relative;
+            }
+            .slideGradient {
+                text-align: center;
+                position: absolute;
+                z-index: 2;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                height: 100%;
+                background: none;
+                background: -webkit-linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 85%);
+                background: -o-linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 85%);
+                background: -moz-linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 85%);
+                background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 85%);
+            }
         }
     }
 }

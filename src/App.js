@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import Slider from "react-slick";
 import { Container, Row, Col } from 'react-grid-system';
 import "../src/style.scss"
+import band from "./images/opaska1.jpg"
+import algorithm from "./images/algo.jpg"
 class App extends Component {
   render() {
     const settings = {
@@ -18,19 +20,21 @@ class App extends Component {
             <Slider className="slider" {...settings}>
               <div className="slide">
                 <div className="band">
-                  <img src="https://raw.githubusercontent.com/radeth/brainattach-v2/workingBranch/src/img/opaska1.jpg" />
+                  <img src={band} />
                 </div>
                 <div className="slideGradient">
-
+                <h2>improve your gaming skill</h2>
+                  <a className="myButton">some tekst</a>
                 </div>
+
               </div>
               <div className="slide">
                 <div className="algorithm">
-                  <img src="https://raw.githubusercontent.com/radeth/brainattach-v2/workingBranch/src/img/28537020_10213994849819679_1350367635_n.jpg" />
+                  <img src={algorithm} />
 
                 </div>
                 <div className="slideGradient">
-
+                  <a className="myButton">some tekst</a>
                 </div>
               </div>
             </Slider>
