@@ -21,9 +21,9 @@ Builds the app for production to the `build` folder.<br>
 ## Features
 
 To-do list:
-- slider
-- image and slider
-- positiong on mobile
+- image position
+- gradient
+- position on mobile
 
 ## Status
 
